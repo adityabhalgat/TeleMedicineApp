@@ -59,16 +59,20 @@ const LoginPage = () => {
 
           <div className="flex justify-between items-center mb-6">
             <div>
-              <a href="#forgot-password" className="text-blue-500 hover:underline">Forgot Password?</a>
+              <a href="/forgot-password" className="text-blue-500 hover:underline">Forgot Password?</a>
             </div>
             <div>
-              <a href="#signup" className="text-blue-500 hover:underline">Create an Account</a>
+              <a href="/signup" className="text-blue-500 hover:underline">Create an Account</a>
             </div>
           </div>
 
           <button
             type="submit"
             className="w-full bg-yellow-500 text-white text-xl font-semibold py-3 px-8 rounded-full hover:bg-yellow-400 transition-all duration-300"
+            onClick={()=>{
+              // Redirect to the home page after successful login
+              window.location.href = '/user/dashboard';
+            }}
           >
             Login
           </button>

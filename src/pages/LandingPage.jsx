@@ -77,13 +77,13 @@ const LandingPage = () => {
                     <>
                       {/* Login / Signup Options */}
                       <a
-                        href="#login"
+                        href="/login"
                         className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
                       >
                         Login
                       </a>
                       <a
-                        href="#signup"
+                        href="/signup"
                         className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
                       >
                         Sign Up

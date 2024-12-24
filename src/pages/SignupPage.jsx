@@ -92,16 +92,19 @@ const SignUpPage = () => {
 
           <div className="flex justify-between items-center mb-6">
             <div>
-              <a href="#login" className="text-blue-500 hover:underline">Already have an account?</a>
+              <a href="/login" className="text-blue-500 hover:underline">Already have an account?</a>
             </div>
             <div>
-              <a href="#forgot-password" className="text-blue-500 hover:underline">Forgot Password?</a>
+              <a href="/forgot-password" className="text-blue-500 hover:underline">Forgot Password?</a>
             </div>
           </div>
 
           <button
             type="submit"
             className="w-full bg-yellow-500 text-white text-xl font-semibold py-3 px-8 rounded-full hover:bg-yellow-400 transition-all duration-300"
+            onClick={()=>{
+              window.location.href = "/user/dashboard"
+            }}
           >
             Sign Up
           </button>
